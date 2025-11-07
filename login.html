@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login Toko Buku</h2>
+
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p>
+        <a href="#" onclick="openModal('modalLupa')">Lupa Password?</a> |
+        <a href="#" onclick="openModal('modalDaftar')">Daftar</a>
+    </p>
+</div>
+
+<!-- Modal Lupa Password -->
+<div class="modal" id="modalLupa">
+    <div class="modal-content">
+        <h3>Lupa Password</h3>
+        <p>Silakan hubungi admin toko.</p>
+        <button onclick="closeModal('modalLupa')">Tutup</button>
+    </div>
+</div>
+
+<!-- Modal Daftar -->
+<div class="modal" id="modalDaftar">
+    <div class="modal-content">
+        <h3>Form Pendaftaran</h3>
+        <input type="text" placeholder="Nama Lengkap">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Daftar</button>
+        <button onclick="closeModal('modalDaftar')">Tutup</button>
+    </div>
+</div>
+
+</body>
+</html>

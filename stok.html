@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Katalog Buku</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/data.js"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <button onclick="kembali()" class="back-button">← Kembali</button>
+    <h2>Katalog Buku</h2>
+
+    <div class="katalog-grid" id="katalogGrid"></div>
+    
+    <hr class="divider">
+
+    <h3>Tambah Stok Baru</h3>
+    <input type="text" id="kode" placeholder="Kode Buku">
+    <input type="text" id="nama" placeholder="Nama Buku">
+    <input type="text" id="jenis" placeholder="Jenis Buku">
+    <input type="number" id="edisi" placeholder="Edisi Buku">
+    <input type="number" id="stok" placeholder="Stok Buku">
+    <input type="text" id="harga" placeholder="Harga Buku">
+    <input type="url" id="cover" placeholder="URL Cover Buku">
+
+    <button onclick="tambahBukuCard()">Tambah</button>
+</div>
+
+</body>
+</html>

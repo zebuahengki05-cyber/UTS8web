@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<div class="dashboard-container">
+    <button onclick="kembali()" class="back-button">← Kembali</button>
+    <h2 id="greeting"></h2>
+
+    <div class="menu-grid">
+        <!-- Card 1 -->
+        <div class="menu-card" onclick="location.href='stok.html'">
+            <div class="menu-icon">📚</div>
+            <div class="menu-title">Informasi Stok</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="menu-card" onclick="location.href='checkout.html'">
+            <div class="menu-icon">🛒</div>
+            <div class="menu-title">Pemesanan Buku</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="menu-card" onclick="location.href='tracking.html'">
+            <div class="menu-icon">📦</div>
+            <div class="menu-title">Tracking Pengiriman</div>
+        </div>
+
+        <div class="menu-card" onclick="location.href='laporan.html'"> 
+            <div class="menu-icon">📊</div>
+            <div class="menu-title">Laporan</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
